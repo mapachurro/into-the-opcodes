@@ -1,0 +1,64 @@
+
+.opcode-cell {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+
+.stack {
+    background-color: green;
+}
+
+.block-tx-msg {
+    background-color: yellow;
+}
+
+.account-state {
+    background-color: blue;
+}
+
+.mem {
+    background-color: orange;
+}
+
+.store-account {
+    background-color: red;
+}
+
+.exec-calls {
+    background-color: fuchsia;
+}
+
+.log {
+    background-color: #4b5320; /* Army green */
+}
+
+/* Apply category colors to opcode cells */
+.opcode-cell.stack {
+    background-color: green;
+}
+
+.opcode-cell.block-tx-msg {
+    background-color: yellow;
+}
+
+.opcode-cell.account-state {
+    background-color: blue;
+}
+
+.opcode-cell.mem {
+    background-color: orange;
+}
+
+.opcode-cell.store-account {
+    background-color: red;
+}
+
+.opcode-cell.exec-calls {
+    background-color: fuchsia;
+}
+
+.opcode-cell.log {
+    background-color: #4b5320; /* Army green */
+}
