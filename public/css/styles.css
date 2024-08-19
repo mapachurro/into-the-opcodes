@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('/public/images/ethereum-background.png') !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#app, #legend-container {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* Opcode formatting */
+
+#opcode-grid {
+  border-collapse: collapse;
+  width: 100%; /* Make it fill the available width */
+}
+
+.opcode-cell {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  width: 6.5%;
+  height: 50px;
+  color: white; /* White text for better visibility */
+  font-weight: bold; /* Bold text */
+}
+
+.stack {
+  background-color: green;
+}
+
+.block-tx-msg {
+  background-color: yellow;
+}
+
+.account-state {
+  background-color: blue;
+}
+
+.mem {
+  background-color: orange;
+}
+
+.store-account {
+  background-color: red;
+}
+
+.exec-calls {
+  background-color: fuchsia;
+}
+
+.log {
+  background-color: #4b5320; /* Army green */
+}
+
+/* Apply category colors to opcode cells */
+.opcode-cell.stack {
+  background-color: green;
+}
+
+.opcode-cell.block-tx-msg {
+  background-color: yellow;
+}
+
+.opcode-cell.account-state {
+  background-color: blue;
+}
+
+.opcode-cell.mem {
+  background-color: orange;
+}
+
+.opcode-cell.store-account {
+  background-color: red;
+}
+
+.opcode-cell.exec-calls {
+  background-color: fuchsia;
+}
+
+.opcode-cell.log {
+  background-color: #4b5320; /* Army green */
+}
+
+/* Legend formatting */
+
+#legend-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px; /* Add space between grid and legend */
+}
+
+#legend {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* A lighter semi-transparent background for the key */
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 20px; /* Space between the key and side panel */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+#legend h3,
+#side-panel h2 {
+  color: black;
+}
+
+#legend ul li,
+#side-panel p,
+#side-panel pre {
+  color: black;
+}
+
+.opcode-cell {
+  color: white; /* Ensures text is readable over the dark background */
+  font-weight: bold; /* Makes the opcode text stand out */
+}
+
+.key-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.key-color.stack {
+  background-color: #6caf6c; /* Stack */
+}
+
+.key-color.block-tx-msg {
+  background-color: #ffd700; /* Block/Tx/Msg */
+}
+
+.key-color.account-state {
+  background-color: #4682b4; /* Account State */
+}
+
+.key-color.mem {
+  background-color: #ff8c00; /* Memory */
+}
+
+.key-color.store-account {
+  background-color: #cd5c5c; /* Store/Account */
+}
+
+.key-color.exec-calls {
+  background-color: #dda0dd; /* Execution/Calls */
+}
+
+.key-color.log {
+  background-color: #556b2f; /* Logs */
+}
+
+/* Side / details panel formatting */
+
+#side-panel {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 200px;
+  margin-top: 20px; /* Space between key and side panel */
+}
