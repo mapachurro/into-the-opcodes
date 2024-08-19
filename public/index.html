@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Opcode Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <table id="opcode-grid"></table>
+    </div>
+    
+    <div id="legend-container">
+        <div id="legend">
+            <h3>Key</h3>
+            <ul>
+                <li><span class="key-color stack"></span> Stack</li>
+                <li><span class="key-color block-tx-msg"></span> Block/Tx/Msg</li>
+                <li><span class="key-color account-state"></span> Account State</li>
+                <li><span class="key-color mem"></span> Memory</li>
+                <li><span class="key-color store-account"></span> Store/Account</li>
+                <li><span class="key-color exec-calls"></span> Execution/Calls</li>
+                <li><span class="key-color log"></span> Logs</li>
+            </ul>
+        </div>
+
+        <div id="side-panel">
+            <!-- Side panel content will go here -->
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
