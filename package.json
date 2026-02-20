@@ -1,4 +1,12 @@
 {
+  "name": "into-the-opcodes",
+  "version": "0.1.0",
+  "description": "A flexible, interactive tool for documentation and explanation of Ethereum Virtual Machine opcodes",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve public -l 3000",
+    "clean-slate": "bash ./clean-slate.sh"
+  },
   "dependencies": {
     "express": "^4.19.2"
   }
