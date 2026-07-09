@@ -27,9 +27,7 @@ jobs:
         run: test -f public/index.html
 
       - name: Install Omnipin
-        run: |
-          npm i -g omnipin@latest
-          omnipin --version
+        run: npm i -g omnipin
 
       - name: Deploy the site
         run: omnipin deploy public --providers=Pinata --ens ${{ vars.OMNIPIN_ENS }}
