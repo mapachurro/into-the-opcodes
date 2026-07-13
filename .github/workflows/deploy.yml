@@ -30,7 +30,7 @@ jobs:
         run: npm i -g omnipin
 
       - name: Deploy the site
-        run: omnipin deploy public --providers=Pinata --ens ${{ vars.OMNIPIN_ENS }}
+        run: omnipin deploy public --providers=Filecoin --ens ${{ vars.OMNIPIN_ENS }}
         env:
-          OMNIPIN_PINATA_TOKEN: ${{ secrets.OMNIPIN_PINATA_TOKEN }}
+          OMNIPIN_FILECOIN_TOKEN: ${{ secrets.OMNIPIN_FILECOIN_TOKEN }}
           OMNIPIN_PK: ${{ secrets.OMNIPIN_PK }}
